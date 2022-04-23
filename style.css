@@ -295,6 +295,10 @@ section.page:nth-child(even) {
   transition: box-shadow 0.25s ease-in-out;
 }
 
+.avatar img {
+  object-fit: cover;
+}
+
 @media screen and (min-width: 700px) {
   .avatar {
     max-height: 300px;
