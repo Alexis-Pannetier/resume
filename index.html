@@ -38,9 +38,9 @@
 
   <body>
     <header class="d-flex justify-center">
-        <nav class="d-flex justify-space-around align-middle">
-        <a class="primary uppercase" href="#hero">Alexis</a>
+        <nav class="d-flex justify-space-around">
             <ul class="d-flex">
+                <li><a class="primary uppercase" href="#hero">Alexis</a></li>
                 <li><a href="#experiences">Expériences</a></li>
                 <li><a href="#formations">Formations</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -49,25 +49,27 @@
     </header>
 
     <main>
-        <div id="hero" class="page vh-100">
+        <section id="hero" class="page vh-100">
             <div class="page-content align-middle">
-                <img class="avatar m-auto" src="images/alexis.jpg" alt="Photo de profil"></img>
+                <div class="avatar m-auto">
+                    <img src="images/alexis.jpg" alt="Photo de profil"></img>
+                </div>
                 <div class="d-flex justify-center align-middle flex-col">
                     <h1><strong>Je suis <span class="primary">Alexis Pannetier</span></strong></h1>
-                    <h2 class="mr-auto"><span class="underline">Développeur Fullstack Junior</span></h2>
+                    <h2><span class="underline">Développeur Fullstack Junior</span></h2>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="intro" class="page">
+        <section id="intro" class="page">
             <div class="page-content w-700">
                 <div class="box">
                     <p class="m-0">Je maîtrise les différentes étapes techniques de la création d’un site ou d’une application web ; de la compréhension des besoins utilisateurs, au développement frontend et backend.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="experiences" class="page vh-100">
+        <section id="experiences" class="page vh-100">
             <div class="page-content align-center align-middle flex-col" >
                 <h2 class="title" data-value="Expériences">Expériences</h2>
 
@@ -113,9 +115,9 @@
                </div>
 
             </div>
-        </div>
+        </section>
 
-        <div id="formations" class="page vh-100">
+        <section id="formations" class="page vh-100">
             <div class="page-content align-center align-middle flex-col" >
                 <h2 class="title" data-value="Formations">Formations</h2>
 
@@ -154,9 +156,9 @@
                </div>
 
             </div>
-        </div>
+        </section>
 
-        <div id="contact" class="page vh-100">
+        <section id="contact" class="page vh-100">
             <div class="page-content align-center align-middle flex-col" >
                 <h2 class="title" data-value="Contact">Contact</h2>
 
@@ -166,7 +168,7 @@
                 </div>
 
             </div>
-        </div>
+        </section>
     </main>
   </body>
 </html>
