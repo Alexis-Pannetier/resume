@@ -1,0 +1,401 @@
+:root {
+  --primary: #f3b51b;
+  --secondary: #292a2c;
+  --dark: #18181b;
+  --white: #eeeeee;
+  --width: 1200px;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: var(--white);
+}
+
+p,
+a,
+li {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+li {
+  text-align: start;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+/* COLORS */
+.primary {
+  color: var(--primary);
+}
+
+::selection {
+  color: var(--dark);
+  background-color: var(--primary);
+}
+
+/* LAYOUT */
+header {
+  z-index: 10;
+  position: fixed;
+  padding: 0.5rem 0;
+  width: 100%;
+  background-color: var(--dark);
+}
+
+header * {
+  font-size: 2rem;
+}
+
+header {
+  display: none !important;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: flex !important;
+  }
+}
+
+nav {
+  width: 100%;
+  max-width: var(--width);
+}
+
+.page {
+  overflow: hidden;
+  min-width: 250px;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+div.page:nth-child(odd) {
+  background-color: var(--dark);
+}
+
+div.page:nth-child(even) {
+  background-color: var(--secondary);
+}
+
+@media screen and (min-width: 700px) {
+  .page {
+    padding: 3rem 1rem;
+  }
+}
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--width);
+  text-align: center;
+  width: 100%;
+}
+
+#hero {
+  padding: 5rem 0;
+}
+
+#hero .page-content {
+  justify-content: center;
+}
+
+@media screen and (min-width: 700px) {
+  #hero {
+    padding: 10rem 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .page-content {
+    justify-content: space-between;
+  }
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.vh-50 {
+  min-height: 50vh;
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-700 {
+  width: 700px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  vertical-align: top;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* SPECIFIC */
+.avatar {
+  z-index: 1;
+  align-self: center;
+  width: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 300px;
+  border-width: 1rem;
+  border-style: solid;
+  border-color: var(--primary);
+  transition: box-shadow 0.25s ease-in;
+}
+
+@media screen and (min-width: 700px) {
+  .avatar {
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+
+.avatar:hover {
+  box-shadow: 0 0 1rem 0.5rem var(--primary);
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5rem;
+}
+
+.title::before {
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  font-weight: bold;
+  line-height: 2;
+  transform: scale(3);
+  content: attr(data-value);
+  pointer-events: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .title::before {
+    line-height: 2.5;
+    transform: scale(4);
+  }
+}
+
+div.page:nth-child(odd) .title::before {
+  color: var(--secondary);
+}
+
+div.page:nth-child(even) .title::before {
+  color: var(--dark);
+}
+
+.box {
+  padding: 4rem;
+  background-image: linear-gradient(var(--primary), var(--primary)),
+    linear-gradient(var(--primary), var(--primary)),
+    linear-gradient(var(--primary), var(--primary)),
+    linear-gradient(var(--primary), var(--primary));
+  background-repeat: no-repeat;
+  background-size: 0.5rem 4rem, 4rem 0.5rem, 0.5rem 4rem, 4rem 0.5rem, 100% 100%;
+  background-position: left bottom, left bottom, right top, right top;
+  transition: background-position 0.5s;
+}
+
+.box:hover {
+  background-position: left top, left top, right bottom, right bottom;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  background: linear-gradient(
+    310.75deg,
+    var(--primary) 4.33%,
+    var(--primary) 77.2%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.25rem;
+  background-position: 0 100%;
+  transition-property: color, background-size;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
+}
+
+.underline:hover {
+  color: var(--dark);
+  background-size: 100% 94%;
+}
+
+.card {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: box-shadow 0.25s ease-in;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    padding: 1.5rem;
+    margin: 2rem 1rem;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 0 1rem 0.5rem var(--primary);
+}
+
+div.page:nth-child(odd) .card {
+  background-color: var(--secondary);
+}
+
+div.page:nth-child(even) .card {
+  background-color: var(--dark);
+}
+
+a.btn {
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: solid 2px var(--primary);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+a.btn:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: var(--secondary);
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: var(--primary);
+}
