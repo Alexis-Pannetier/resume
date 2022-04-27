@@ -34,18 +34,22 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+
   </head>
 
   <body>
-    <header class="d-flex justify-center">
-        <nav class="d-flex justify-space-around">
-            <ul class="d-flex">
-                <li><a class="primary uppercase" href="#hero">Alexis</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="d-flex justify-space-between page-content">
+            <nav class="d-flex align-center">
+                <ul class="d-flex">
+                    <li><a class="primary uppercase" href="#hero">Alexis</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="btn" target="_blank" href="/download/cv.pdf" download>Télécharger le CV</a>
+        </div>
     </header>
 
     <main>
@@ -163,10 +167,12 @@
             <div class="page-content align-center align-middle flex-col" >
                 <h2 class="title" data-value="Contact">Contact</h2>
 
-                <div class="d-flex justify-space-around flex-row w-100">
-                    <a class="btn" target="_blank" href="https://www.linkedin.com/in/alexis-pannetier">Linkedin</a>
-                    <a class="btn" target="_blank" href="https://github.com/alexis-pannetier">Github</a>
+                <div class="d-flex justify-space-around flex-wrap flex-row w-100">
+                    <a class="btn my-2 m-auto" target="_blank" href="https://www.linkedin.com/in/alexis-pannetier">Linkedin</a>
+                    <a class="btn my-2 m-auto" target="_blank" href="https://github.com/alexis-pannetier">Github</a>
                 </div>
+                
+                <a class="btn my-2 m-auto" href="mailto:alexis.pannetier@hotmail.fr">Envoyer un Email</a>
 
             </div>
         </section>
