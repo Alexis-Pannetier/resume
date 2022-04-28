@@ -36,8 +36,22 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
+p,
+a,
+li,
+span,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
   color: var(--white);
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
 }
 
 p {
@@ -46,10 +60,12 @@ p {
 
 p,
 a,
-li {
+li,
+em {
   font-size: 1rem;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s ease-in-out;
 }
 
 li {
@@ -241,7 +257,8 @@ section.page:nth-child(even) {
 }
 
 .my-2 {
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .vh-50 {
@@ -502,5 +519,14 @@ a.btn:hover {
   }
   100% {
     letter-spacing: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

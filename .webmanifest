@@ -1,0 +1,22 @@
+{
+  "short_name": "CV-AP",
+  "name": "CV Alexis Pannetier",
+  "icons": [
+    {
+      "src": "/images/preview.jpg",
+      "type": "image/jpg",
+      "sizes": "1200x630"
+    },
+    {
+      "src": "/images/alexis.jpg",
+      "type": "image/jpg",
+      "sizes": "300x300"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#292a2c",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#292a2c",
+  "description": "CV Site - Alexis Pannetier"
+}
