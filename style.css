@@ -546,6 +546,15 @@ a.btn:hover {
 }
 
 /* MISC */
+.caret {
+  border: 1rem solid;
+  border-width: 0 0.5rem 0 0;
+  border-color: var(--primary);
+  animation: caret infinite;
+  animation-duration: 1.06s;
+  animation-timing-function: steps(1, end);
+}
+
 ::selection {
   color: var(--dark);
   background-color: var(--primary);
@@ -593,5 +602,15 @@ a.btn:hover {
   100% {
     height: 4rem;
     width: 4rem;
+  }
+}
+
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
