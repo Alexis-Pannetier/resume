@@ -29,6 +29,7 @@
   font-weight: bold;
 }
 
+/* #region COMMUN */
 body {
   margin: 0;
   padding: 0;
@@ -89,19 +90,13 @@ h1,
 h2 {
   margin: 1rem 0;
 }
-
 h1 {
   font-size: 3em;
 }
-
 h2 {
   font-size: 2.5rem;
 }
-
-h3 {
-  font-size: 1.25rem;
-}
-
+h3,
 h4 {
   font-size: 1.25rem;
 }
@@ -110,15 +105,10 @@ h4 {
   h1 {
     font-size: 3.75em;
   }
-
   h2 {
     font-size: 3rem;
   }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
+  h3,
   h4 {
     font-size: 1.5rem;
   }
@@ -130,6 +120,7 @@ h4 {
     font-size: 1.5rem;
   }
 }
+/* #endregion */
 
 /* NAVIGATION */
 nav ul {
@@ -151,7 +142,7 @@ nav a {
   color: var(--primary);
 }
 
-/* HEADER */
+/* #region HEADER */
 header {
   display: none;
   z-index: 100;
@@ -200,7 +191,9 @@ header li:hover:before {
   transform: scaleX(1);
 }
 
-/* PAGE */
+/* #endregion */
+
+/* #region PAGE */
 .page {
   overflow: hidden;
   min-width: 250px;
@@ -255,7 +248,9 @@ section:nth-child(odd) .btn {
   width: 100%;
 }
 
-/* HERO */
+/* #endregion */
+
+/* #region HERO */
 #hero {
   padding: 5rem 0 5rem 0;
 }
@@ -275,10 +270,15 @@ section:nth-child(odd) .btn {
     justify-content: space-between;
   }
 }
+/* #endregion */
 
-/* LAYOUT */
+/* #region LAYOUT */
 .text-align {
   text-align: center;
+}
+
+.p-1 {
+  padding: 0.5rem;
 }
 
 .mt-6 {
@@ -340,8 +340,9 @@ section:nth-child(odd) .btn {
 .uppercase {
   text-transform: uppercase;
 }
+/* #endregion */
 
-/* AVATAR */
+/* #region AVATAR */
 .avatar {
   z-index: 1;
   align-self: center;
@@ -374,8 +375,9 @@ section:nth-child(odd) .btn {
 .avatar:hover {
   box-shadow: 0 0 1rem 0.5rem var(--primary);
 }
+/* #endregion */
 
-/* TITLE */
+/* #region TITLE */
 .title {
   position: relative;
   z-index: 1;
@@ -428,8 +430,9 @@ section:nth-child(odd) .btn {
 .title:hover .title::before {
   color: var(--primary) !important;
 }
+/* #endregion */
 
-/* BOX */
+/* #region BOX */
 .box {
   position: relative;
   max-width: 800px;
@@ -539,8 +542,9 @@ section:nth-child(odd) .btn {
     left: 100%;
   }
 }
+/* #endregion */
 
-/* UNDERLINE */
+/* #region UNDERLINE */
 .underline {
   background: linear-gradient(
     310.75deg,
@@ -559,17 +563,18 @@ section:nth-child(odd) .btn {
   color: var(--dark);
   background-size: 100% 94%;
 }
+/* #endregion */
 
-/* CARD */
+/* #region CARD */
 .card {
   padding: 1rem;
   border-radius: 0.5rem;
   transition: box-shadow 0.3s ease-in-out;
-  margin: 1rem 0.25rem;
+  margin: 1rem 0;
   text-decoration: none;
   box-sizing: border-box;
-  max-width: 700px;
   width: 100%;
+  max-width: 500px;
 }
 
 .card ul {
@@ -579,7 +584,8 @@ section:nth-child(odd) .btn {
 @media screen and (min-width: 800px) {
   .card {
     padding: 2rem;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
+    max-width: 690px;
   }
 }
 
@@ -590,8 +596,9 @@ section:nth-child(odd) .btn {
 .card:hover {
   box-shadow: 0 0 1rem 0.25rem var(--primary);
 }
+/* #endregion */
 
-/* BUTTON */
+/* #region BUTTON */
 a.btn {
   font-size: 1rem;
   font-weight: bold;
@@ -608,7 +615,13 @@ a.btn:hover {
   color: var(--dark);
 }
 
-/* MISC */
+#contact a.btn img {
+  max-height: 48px;
+  max-width: 150px;
+}
+/* #endregion */
+
+/* #region MISC */
 .caret {
   border: 1rem solid;
   border-width: 0 0.5rem 0 0;
@@ -634,6 +647,7 @@ a.btn:hover {
   height: 30px;
   background-color: var(--primary);
 }
+/* #endregion */
 
 /* ANIMATIONS */
 @keyframes letter-spacing {
