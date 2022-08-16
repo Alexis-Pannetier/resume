@@ -507,6 +507,7 @@ h4 {
 
 .timeline-item .card:not(.revealed) {
   transform: translate(100%);
+  pointer-events: none;
   opacity: 0;
 }
 
