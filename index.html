@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>CV | Alexis Pannetier</title>
+    <title>Alexis Pannetier | Développeur Fullstack</title>
 
     <meta name="theme-color" content="#292a2c"/>
     <meta name="description" content="CV Site - Alexis Pannetier"/>
@@ -38,20 +38,7 @@
   </head>
 
   <body>
-    <header>
-        <div class="d-flex justify-space-between page-content">
-            <nav class="d-flex align-center">
-                <ul class="d-flex">
-                    <li><a class="primary uppercase" href="#hero">Alexis</a></li>
-                    <li><a href="#experiences">Expériences</a></li>
-                    <li><a href="#formations">Formations</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a class="btn" target="_blank" href="/download/cv.pdf" download>Télécharger le CV</a>
-        </div>
-    </header>
-
+    
     <main>
         <section id="hero" class="page">
             <div class="page-content flex-row align-middle">
@@ -60,7 +47,7 @@
                 </div>
                 <div class="d-flex justify-center align-middle flex-col">
                     <h1><strong>Je suis <span class="primary">Alexis Pannetier<span class="caret"></span></span></strong></h1>
-                    <h2><span class="underline">Développeur Fullstack Junior</span></h2>
+                    <h2><span class="underline">Développeur Fullstack </span></h2>
                 </div>
                 <div class="box mt-6">
                     <span class="border border-left"></span>
@@ -70,103 +57,125 @@
             </div>
         </section>
 
-        <section id="experiences" class="page">
+        
+        <section id="timeline" class="page bg-dark">
+            <noscript>
+                <style>
+                    #timeline .page-content {display:none;}
+                </style>
+                <p class="no-js">Javascript is disabled 😢</p>
+            </noscript>
+
             <div class="page-content align-center align-middle flex-col" >
-                <h2 class="title" data-value="Expériences">Expériences</h2>
 
-                <div class="d-flex flex-col p-1">
+                <div id="timeline-title">
+                    <h2 class="primary">Formation</h2>
+                    <span class="title">&</span>
+                    <h2 class="primary">Expérience</h2>
+                </div>
 
-                    <a href="https://www.adbinfo.fr" class="card" target="_blank">
-                        <div class="d-flex justify-space-between align-center">
-                            <h3>ADB DEV</h3>
-                            <span><strong class="primary">2019-2022</strong></span>
-                        </div>
-                        <h4><span class="primary">Développeur fullstack</span> - alternance</h4>
-                        <ul>
-                            <li>Création d'une application de type CRM en React</li>
-                            <li>Développement d'une API Rest en Laravel</li>
-                            <li>Création d'une solution Wordpress (extension + thème)</li>
-                        </ul>
-                    </a>
 
-                    <a href="https://www.mobilitytechgreen.com" class="card" target="_blank">
-                        <div class="d-flex justify-space-between align-center">
-                            <h3>Mobility Tech Green</h3>
-                            <span><strong class="primary">2019</strong></span>
-                        </div>
-                        <h4><span class="primary">Développeur mobile</span> - alternance</h4>
-                        <ul>
-                            <li>Réalisation d'une application mobile en Xamarin forms</li>
-                        </ul>
-                    </a>
+                <div class="timeline">
 
-                    <a href="https://www.theschoolab.com" class="card" target="_blank">
-                        <div class="d-flex justify-space-between align-center">
-                            <h3>Schoolab</h3>
-                            <span><strong class="primary">2018</strong></span>
-                        </div>
-                        <h4><span class="primary">Développeur web</span> - alternance</h4>
-                        <ul>
-                            <li>Développement d'une petite application web avec Gulp</li>
-                            <li>Création d'un réseau Wordpress</li>
-                            <li>Refonte de sites Wordpress</li>
-                        </ul>
-                    </a>
+                    <div class="timeline-item">
+                        <a class="card card-secondary" target="_blank">
+                            <div class="d-flex justify-space-between align-center">
+                                <h3>? ? ?</h3>
+                                <span>Révélé en <strong class="primary">Octobre 2022</strong></span>
+                            </div>
+                        </a>
+                    </div>
 
-               </div>
+                    <div class="timeline-item">
+                        <a href="https://www.adbinfo.fr" class="card card-secondary" target="_blank" >
+                            <div class="d-flex justify-space-between align-center">
+                                <h3>ADB DEV</h3>
+                                <span><strong class="primary">2019-2022</strong></span>
+                            </div>
+                            <h4><span class="primary">Développeur fullstack</span> - alternance</h4>
+                            <ul>
+                                <li>Création d'une application de type CRM en React</li>
+                                <li>Développement d'une API Rest en Laravel</li>
+                                <li>Création d'une solution Wordpress (extension + thème)</li>
+                            </ul>
+                        </a>
+                    </div>
+                    
+                    <div class="timeline-item formation">
+                        <a href="https://www.mydigitalschool.com/mba-architecte-web" class="card card-secondary"  target="_blank">
+                            <div class="d-flex justify-space-between align-center">
+                                <h3>My Digital School</h3>
+                                <span><strong class="primary">2019-2022</strong></span>
+                            </div>
+                            <h4 class="primary">Master fullstack</h4>
+                            <ul>
+                                <li>Titre RNCP : Concepteur Développeur d'Application</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="timeline-item">
+                        <a href="https://www.mobilitytechgreen.com" class="card card-secondary" target="_blank">
+                            <div class="d-flex justify-space-between align-center">
+                                <h3>Mobility Tech Green</h3>
+                                <span><strong class="primary">2019</strong></span>
+                            </div>
+                            <h4><span class="primary">Développeur mobile</span> - alternance</h4>
+                            <ul>
+                                <li>Réalisation d'une application mobile en Xamarin forms</li>
+                            </ul>
+                        </a>
+                    </div>
+                    
+                    <div class="timeline-item formation">
+                        <a href="https://campusacademy.fr/campus/rennes" class="card card-secondary"  target="_blank">
+                            <div class="d-flex justify-space-between align-center">
+                                <h3>IMIE</h3>
+                                <em>Devenu Campus Academy</em>
+                                <span><strong class="primary">2017-2019</strong></span>
+                            </div>
+                            <h4 class="primary">Développeur logiciel</h4>
+                        </a>
+                    </div>
+
+                    <div class="timeline-item">
+                        <a href="https://www.theschoolab.com" class="card card-secondary" target="_blank">
+                            <div class="d-flex justify-space-between align-center">
+                                <h3>Schoolab</h3>
+                                <span><strong class="primary">2018</strong></span>
+                            </div>
+                            <h4><span class="primary">Développeur web</span> - alternance</h4>
+                            <ul>
+                                <li>Développement d'une petite application web avec Gulp</li>
+                                <li>Création d'un réseau Wordpress</li>
+                                <li>Refonte de sites Wordpress</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="timeline-item formation">
+                        <a href="https://lycee-joliot-curie-rennes.fr/bts-conception-et-realisation-de-systemes-automatiques" class="card card-secondary"  target="_blank">
+                            <div class="d-flex justify-space-between align-center">
+                                <h3>Joliot-Curie</h3>
+                                <span><strong class="primary">2016</strong></span>
+                            </div>
+                            <h4 class="primary">Brevet Technicien supérieur</h4>
+                            <ul>
+                                <li>Titre RNCP : Conception et Réalisation de Systèmes Automatiques</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </section>
 
-        <section id="formations" class="page">
+        <section id="contact" class="page bg-dark">
             <div class="page-content align-center align-middle flex-col" >
-                <h2 class="title" data-value="Formations">Formations</h2>
-
-                <div class="d-flex flex-col p-1">
-
-                    <a href="https://www.mydigitalschool.com/mba-architecte-web" class="card"  target="_blank">
-                        <div class="d-flex justify-space-between align-center">
-                            <h3>My Digital School</h3>
-                            <span><strong class="primary">2019-2022</strong></span>
-                        </div>
-                        <h4 class="primary">Master fullstack</h4>
-                        <ul>
-                            <li>Titre RNCP : Concepteur Développeur d'Application</li>
-                        </ul>
-                    </a>
-
-                    <a href="https://campusacademy.fr/campus/rennes" class="card"  target="_blank">
-                        <div class="d-flex justify-space-between align-center">
-                            <h3>IMIE</h3>
-                            <em>Devenu Campus Academy</em>
-                            <span><strong class="primary">2017-2019</strong></span>
-                        </div>
-                        <h4 class="primary">Développeur logiciel</h4>
-                    </a>
-
-                    <a href="https://lycee-joliot-curie-rennes.fr/bts-conception-et-realisation-de-systemes-automatiques" class="card"  target="_blank">
-                        <div class="d-flex justify-space-between align-center">
-                            <h3>Joliot-Curie</h3>
-                            <span><strong class="primary">2016</strong></span>
-                        </div>
-                        <h4 class="primary">Brevet Technicien supérieur</h4>
-                        <ul>
-                            <li>Titre RNCP : Conception et Réalisation de Systèmes Automatiques</li>
-                        </ul>
-                    </a>
-
-               </div>
-
-            </div>
-        </section>
-
-        <section id="contact" class="page">
-            <div class="page-content align-center align-middle flex-col" >
-                <h2 class="title" data-value="Contact">Contact</h2>
 
                 <div class="d-flex justify-space-around flex-wrap flex-row w-100">
-                    <a class="btn m-1" target="_blank" href="https://www.linkedin.com/in/alexis-pannetier"><img src="./images/linkedin-logo.png" alt="Linked in avec logo"/></a>
-                    <a class="btn m-1" target="_blank" href="https://github.com/alexis-pannetier"><img src="./images/github-logo.png" alt="Github avec logo"/></a>
+                    <a class="btn btn-secondary m-1" target="_blank" href="https://www.linkedin.com/in/alexis-pannetier"><img src="./images/linkedin-logo.png" alt="Linked in avec logo"/></a>
+                    <a class="btn btn-secondary m-1" target="_blank" href="https://github.com/alexis-pannetier"><img src="./images/github-logo.png" alt="Github avec logo"/></a>
                 </div>
                 
             </div>
@@ -174,3 +183,5 @@
     </main>
   </body>
 </html>
+
+<script src="index.js"></script>
