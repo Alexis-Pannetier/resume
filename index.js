@@ -1,8 +1,8 @@
-const cards = document.querySelectorAll(".timeline-item .card");
+const timelineItem = document.querySelectorAll("#timeline .timeline-item");
 
 scrollAnim = () => {
   let windowHt = window.innerHeight;
-  cards.forEach((elements) => {
+  timelineItem.forEach((elements) => {
     let elementPos = elements.getBoundingClientRect().top;
     if (elementPos <= windowHt / 1.3) {
       elements.classList.add("revealed");
