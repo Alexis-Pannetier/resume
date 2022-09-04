@@ -34,7 +34,7 @@
 body {
   margin: 0;
   padding: 0;
-  cursor: url("./cusror/normal-dark.cur"), auto;
+  cursor: url("./cursor/normal-dark.cur"), auto;
   background-color: var(--dark);
 }
 
@@ -60,6 +60,10 @@ h6,
 
 p {
   margin: 1.5rem;
+}
+
+a {
+  cursor: url("./cursor/normal-primary.cur"), auto;
 }
 
 p,
@@ -516,6 +520,7 @@ h4 {
 }
 
 .timeline-item:before {
+  transition: all 0.5s ease-in-out;
   position: absolute;
   content: "";
   border-radius: 50%;
@@ -595,6 +600,7 @@ a.btn:hover {
 }
 
 .contact-buttons {
+  margin: 10rem 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
