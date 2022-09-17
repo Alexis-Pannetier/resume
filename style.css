@@ -300,7 +300,7 @@ h4 {
   border-color: var(--primary);
   height: 2rem;
   width: 2rem;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   top: 50%;
   left: 50%;
   animation-name: fade-in;
@@ -511,7 +511,7 @@ h4 {
 }
 
 .timeline-item:not(.revealed) .card {
-  transform: translate(100%);
+  transform: translate(50%);
   pointer-events: none;
 }
 
@@ -565,7 +565,7 @@ h4 {
   }
 
   .timeline-item.formation:not(.revealed) .card {
-    transform: translate(-100%);
+    transform: translate(-50%);
     opacity: 0;
   }
 
@@ -588,7 +588,7 @@ a.btn {
   padding: 1.5rem;
   border-radius: 0.5rem;
   border: solid 2px var(--primary);
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .btn-secondary {
