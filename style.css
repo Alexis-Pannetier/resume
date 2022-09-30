@@ -66,9 +66,9 @@ a {
   cursor: url("./cursor/normal-primary.cur"), auto;
 }
 
-p,
-li,
 em,
+li,
+p,
 .date {
   font-size: 1rem;
   font-weight: normal;
@@ -477,6 +477,8 @@ h4 {
     var(--primary) calc(100% - 4rem),
     var(--dark)
   );
+  left: 1rem;
+  transition: left 0.5s ease-in-out;
   transform: translate(-50%);
   content: "";
   position: absolute;
