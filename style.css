@@ -223,6 +223,14 @@ h4 {
   );
 }
 
+.hero-header {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -260,6 +268,7 @@ h4 {
   border-width: 0.5rem;
   border-style: solid;
   border-color: var(--primary);
+  transition: box-shadow 0.2s ease-out;
 }
 
 .avatar img {
@@ -406,7 +415,7 @@ h4 {
   background-size: 100% 0.25rem;
   background-position: 0 100%;
   transition-property: color, background-size;
-  transition-duration: 0.25s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
